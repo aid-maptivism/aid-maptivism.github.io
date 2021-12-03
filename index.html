@@ -1,1 +1,112 @@
-Hello world
+<html>
+<!--This example uses the default bootstrap stylesheet-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--provides a full-width container that can expand or collapse based on the size of viewport-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-12 col-xs-12">
+            <nav id="navbar">
+                <h3>Google Earth Engine Tutorial</h3>
+                <!--content stacking for smaller screens-->
+                <ul class="nav nav-pills nav-stacked">
+                 <!--internal linking to the respective sections-->
+                    <a class="nav-link" href="#account" rel="introduction">
+                        <li>What is GEE?</li>
+                    </a>
+                    <a class="nav-link" href="#account" rel="internal">
+                        <li>Getting an account</li>
+                    </a>
+                    <a class="nav-link" href="#datasets" rel="internal">
+                        <li>Datasets</li>
+                    </a>
+                    <a class="nav-link" href="#simple_exercises" rel="internal">
+                        <li>Simple GEE Exercises</li>
+                    </a>
+                    <a class="nav-link" href="geemap" rel="internal">
+                        <li>Geemap Package</li>
+                    </a>
+                    <a class="nav-link" href="application_examples" rel="internal">
+                        <li>Application Examples</li>
+                    </a>
+                    <a class="nav-link" href="#resources" rel="internal">
+                        <li>Additional Resources</li>
+                    </a>
+                 </ul>
+            </nav>
+        </div>
+        <div class="col-md-10 col-sm-12 col-xs-12">
+            <main id="main-doc">
+
+                <section class="main-section" id="introduction">
+                    <h3 style = "background: black; color: white">What is Google Earth Engine (GEE)?</h3>
+                    <p>
+                    Google Earth Engine (GEE) is a geospatial processing service. It hosts several petabytes of satellite imagery and geospatial datasets on the cloud, which alows the user to perform geospatial processing at scale.
+                    </p>
+                </section>
+
+
+                <section class="main-section" id="account" >
+                 <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
+                    <h3 style = "background: black; color: white">Getting an account</h3>
+                    <article>
+                    <p>You can sign up for Google Earth Engine account here: <a href="https://signup.earthengine.google.com/#!/">https://signup.earthengine.google.com/#!/</a></p>
+
+                    <p> It will approximately take around 24 hours to get an account approved. Once it is approved, you should be abled to access here: <a href="https://code.earthengine.google.com/">https://code.earthengine.google.com/</a></p>
+                        </article>
+                </section>
+
+
+
+                <section class="main-section" id="datasets">
+                    <h3 style = "background: black; color: white">Datasets</h3>
+                    <article>
+                        <p>Some commonly used GEE datasets</p>
+<!--creating list using html-->
+                        <li>Landsat</li>
+                        <li>Sentinel</li>
+                        <li>Modis</li>
+                        <li>Landcover</li>
+
+                        </artice>
+                </section>
+                <section class="main-section" id="simple_exercises">
+                    <h3 style = "background: black; color: white">Simple exercises</h3>
+                    <article>
+                    <p> 
+                        <li>Defining geometries</li>
+                        <li>GEE data types: image, image collections, feature, feature collections</li>
+                        <li>Loading data</li>
+                        <li>Visualizing images and bands</li>
+                        <li>Band computations</li>
+                        <li>Plotting charts</li>
+                        <li>Exporting images and plots</li>
+                    </p>
+                    </article>
+                </section>
+                <section class="main-section" id="geemap">
+                    <h3 style = "background: black; color: white">GEEMAP Python Package</h3>
+                    <article>
+                        GEE operations can be easily performed using <code>geemap</code> package in python Jupyter notebook.
+
+                    </article>
+                </section>
+                <section class="main-section" id="application_examples">
+                    <h3 style = "background: black; color: white">Applications of GEE: A few examples</h3>
+                    <p>
+                        <li>NDVI</li>
+                        <li>NDWI</li>
+                    </p>
+                </section>
+
+                <section class="main-section" id="resources">
+                    <h3 style = "background: black; color: white">Additional resources</h3>
+                    <p>
+                    <li>Get started with Google Earth Engine: <a href="https://developers.google.com/earth-engine/guides/getstarted">https://developers.google.com/earth-engine/guides/getstarted</a> </li>
+                    </p>
+                </section>
+            </main>
+        </div>
+    </div>
+</div>
+</html>
