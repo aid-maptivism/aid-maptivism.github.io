@@ -17,6 +17,11 @@
                     <a class="nav-link" href="#account" rel="internal">
                         <li>Getting an account</li>
                     </a>
+
+                    <a class="nav-link" href="#indices" rel="internal">
+                        <li>List of Remote Sensing Indices</li>
+                    </a>
+
                     <a class="nav-link" href="#datasets" rel="internal">
                         <li>Datasets</li>
                     </a>
@@ -41,7 +46,7 @@
                 <section class="main-section" id="introduction">
                     <h3 style = "background: black; color: white">What is Google Earth Engine (GEE)?</h3>
                     <p>
-                    Google Earth Engine (GEE) is a geospatial processing service. It hosts several petabytes of satellite imagery and geospatial datasets on the cloud, which alows the user to perform geospatial processing at scale.
+                    Google Earth Engine (GEE) is a geospatial processing service. It hosts several petabytes of satellite imagery and geospatial datasets on the cloud, which alows the user to perform geospatial processing at scale. GEE consists of several datasets (satellite, geophysical, climate, etc.) over the last 40 years and has a computational engine that can rapidly perform geospatial analysis. We can develop applications directly on the dashboard or through APIs (Python, Javascript).
                     </p>
                 </section>
 
@@ -56,6 +61,22 @@
                         </article>
                 </section>
 
+                <section class="main-section" id="indices">
+                	<h3 style = "background: black; color: white">List of Remote Sensing Indices</h3>
+                	<article>
+                		<p>
+                		<li>Normalized Difference Vegetation Index (NDVI)</li>
+                        <li>Normalized Difference Water Index (NDWI)</li>
+                        <li>Enhanced Vegetation Index (EVI): an alternative to NDVI</li>
+
+                		</p>
+
+                		<p> <a href="https://www.indexdatabase.de/db/i.php">An exhaustive list of remote sensing indices</a></p>
+
+                	</article>
+
+                </section>
+
 
 
                 <section class="main-section" id="datasets">
@@ -66,7 +87,7 @@
                         <li>Landsat</li>
                         <li>Sentinel</li>
                         <li>Modis</li>
-                        <li>Landcover</li>
+                        <li>Landcover</li> 
 
                         </artice>
                 </section>
@@ -74,7 +95,9 @@
                     <h3 style = "background: black; color: white">Simple exercises</h3>
                     <article>
                     <p> 
-                        <li>Defining geometries</li>
+                    	NASA has detailed tutorial videos on Google Earth Engine basics and general applications: <a href="https://www.youtube.com/watch?v=-BwqcjgHh6A">Link to NASA tutorial</a>.
+
+                        <li>Defining geometries:</li>
                         <li>GEE data types: image, image collections, feature, feature collections</li>
                         <li>Loading data</li>
                         <li>Visualizing images and bands</li>
@@ -87,15 +110,30 @@
                 <section class="main-section" id="geemap">
                     <h3 style = "background: black; color: white">GEEMAP Python Package</h3>
                     <article>
-                        GEE operations can be easily performed using <code>geemap</code> package in python Jupyter notebook.
+                    	<p>
+                        GEE operations can be easily performed using <code>geemap</code> package in python Jupyter notebook. <code>geemap</code> is a powerful package to perform GEE operations using Python, and it allows the user to create quick dashboards and timelapses. </p>
+
+                        <p>To use <code>geemap</code> one needs to have <code>python</code> and Jupyter notebook. Easiest way to install both is through Anaconda. <a href="https://www.anaconda.com/products/individual">Link to download</a>. </p>
+
+                        <p>We can access python either through Anaconda Navigator or through the terminal by using <code>conda</code> command. </p>
+
+                        	<img src="navigator.png" alt="Anaconda navigator" style="width:700px;height:376px;">
+
+
+
+                        <p>If using Anaconda Navigator, we need to install <code>geemap</code> package first. We can go to the 'Environments' option from the menu in the left hand side bar menu and search for <code>geemap</code> package and install as explained in this tutorial: <a href="https://docs.anaconda.com/anaconda/navigator/tutorials/manage-packages/">Installing python packages in Anaconda</a>. </p>
+
+                        <p>After installing the <code>geemap</code> package, we can navigate back to Anaconda Navigator's home page, and click on Jupyter notebook. If any additional packages need to be installed, follow the same approach mentioned above. </p>
+
+                        <p>The created of <code>geemap</code> package, Dr. Qiusheng Wu has uploaded a detailed set of tutorials. <a href="https://www.youtube.com/watch?v=h0pz3S6Tvx0">Link to getting started on geemap.</a></p>
 
                     </article>
                 </section>
                 <section class="main-section" id="application_examples">
                     <h3 style = "background: black; color: white">Applications of GEE: A few examples</h3>
                     <p>
-                        <li>NDVI</li>
-                        <li>NDWI</li>
+ 
+ 						<li><a href="https://www.youtube.com/watch?v=WxQgbkZcRr8">Getting NDVI and NDWI in Google Earth Engine</a></li>
                     </p>
                 </section>
 
